@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+    font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+a {
+	color:#ff8822;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul {
+	list-style:none;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #333333;
+  background-color: white;
+  font-size: 14px;
+}
+
+.clearfix:after {
+	content: "."; 
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	min-height: 1px;
+}
+
+* html .clearfix {
+	height: 1px;
+	/*¥*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+#container {
+	width:990px;
+	margin:0 auto;
+} 
+
+/* header */
+#head {
+	background: url(../img/head_bg.png) 0 0 no-repeat;
+	height: 114px;
+}
+
+h1 {
+	width:197px;
+	float:left;
+	padding-top: 15px;
+	margin-left: 15px;
+}
+.head-link {
+	padding-top: 77px;
+	padding-right: 15px;
+	text-align: right;
+}
+.head-link a {
+	color:#666666;
+}
+
+/* nav */
+.nav {
+	background-color: #5c788e;
+	color:#ffffff;
+	height:52px;
+	width:990px;
+	text-align: right;
+	position:relative;
+}
+
+.nav span {
+	font-size: 12px;
+}
+.nav ul {
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:0;
+}
+
+.nav li {
+	display:block;
+	float:left;
+	padding:4px 10px;
+	height:44px;
+}
+.nav a {
+	color:#ffffff;
+
+}
+.nav a:hover {
+	text-decoration: none;
+}
+.nav li:hover {
+	background-color: #768d9f
+}
+.nav li.on {
+	background-color: #142c61;
+}
+.nav li.on:hover {
+	background-color: #142c61;
+}
+
+/* content */
+#wrap {
+	margin-bottom: 50px;
+	line-height: 1.8;
+}
+.top-lead {
+	padding:0 15px;
+	margin-bottom: 35px;
+}
+.top-box {
+	margin: 0 15px;
+	overflow: hidden;  
+    height: auto;
+}
+.box1 {
+	float:left;
+	width:270px;
+	padding-right: 37px;
+	margin-right: 37px;
+	border-right: solid 1px;
+	border-color: #c7c7c7;
+	padding-bottom: 32767px;  
+    margin-bottom: -32767px; 
+}
+.box2 {
+	float:left;
+	width:270px;
+}
+.text-title {
+	color:#5c788e;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.sub-lead {
+	padding:0 30px;
+}
+.sub-box {
+	padding:0 30px;
+	margin-top: 35px;
+}
+.sub-box.candidates {
+	padding:0 30px;
+	margin-top: 0px;
+}
+.sub-box .text-title {
+	color:#5c788e;
+	font-weight: bold;
+	font-size: 18px;
+	border-bottom: solid 1px;
+	border-color: #c7c7c7;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.sub-box dl {
+	margin-top: 10px;
+}
+.sub-box dt {
+	font-weight: bold;
+	float:left;
+	width:143px;
+	padding-bottom: 5px;
+}
+.sub-box dd {
+	margin-left: 143px;
+	padding-bottom: 5px;
+}
+.sub-box p {
+	margin-bottom: 18px;
+}
+.prof-photo {
+	width:100px;
+	float:left;
+	padding-right: 20px;
+	margin-top: 10px;
+}
+.prof-text {
+	width:810px;
+	float:left;
+	margin-top: 10px;
+}
+.step {
+	margin-bottom: 15px;
+}
+.step p {
+	font-weight: bold;
+	color:#ff8822;
+	border-bottom: dotted 1px;
+	border-color: #c7c7c7;
+	margin-bottom: 10px;
+}
+.service ul {
+	list-style: disc;
+	margin: 0 0 0 25px;
+}
+span.bold {
+	font-weight: bold;
+}
+
+.mri dt {
+	float:left;
+	width:300px;
+	height:63px;
+	padding-bottom: 0px;
+}
+.mri dd {
+	padding-top: 15px;
+	margin-left: 300px;
+	height:48px;
+	padding-bottom: 0px;
+}
+.english dt {
+	float:left;
+	width:250px;
+	padding-bottom: 10px;
+}
+.english dd {
+	margin-left: 250px;
+	padding-bottom: 10px;
+}
+
+/* contact btn */
+.btn {
+	text-align: center;
+}
+.btn a {
+	text-indent: -2000px;
+	display:block;
+	background: url(../img/btn_blue.png) 0 0 no-repeat;
+	width:288px;
+	height:54px;
+	margin:0 auto;
+}
+.btn a:hover {
+	background: url(../img/btn_ligheblue.png) 0 0 no-repeat;
+}
+
+
+/* footer */
+#footer {
+	background: url(../img/footer_bg.png) 0 0 no-repeat;
+	height:32px;
+	padding: 10px 15px 0 15px;
+	color:#ffffff;
+	font-size: 12px;
+}
+#footer a {
+	color:#ffffff;
+}
+.copy {
+	float:left;
+	width:70%;
+}
+.footer-link {
+	width:30%;
+	float:left;
+	text-align: right;
+}
+
+
+
+
+
+
